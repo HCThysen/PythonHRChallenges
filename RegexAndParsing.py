@@ -9,7 +9,7 @@
 # Print the first occurrence of the repeating character. If there are no repeating characters, print -1.
 import re
 string = input()
-#re.search(pattern, string) returns 1 if the pattern is found in the string
+#re.search(pattern, string) returns a match object if the pattern is found in the string
 m = re.search(r'([a-zA-Z0-9])\1',string)
 if m:
     print(m.groups()[0])
